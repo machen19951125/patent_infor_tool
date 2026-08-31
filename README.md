@@ -33,7 +33,7 @@ python scripts\collect_inquiry_evidence.py "询单范例.xlsx"
 
 ## Streamlit 图形界面
 
-安装依赖后，双击工作区根目录中的 `启动询单证据采集器.cmd`。启动器会向 Windows 自动申请一个当前空闲的随机端口，并且只监听本机 `127.0.0.1`；没有固定端口，也不会向局域网开放服务。
+安装依赖后，双击工作区根目录中的 `启动询单证据采集器.bat`。启动器会向 Windows 自动申请一个当前空闲的随机端口，并且只监听本机 `127.0.0.1`；没有固定端口，也不会向局域网开放服务。
 
 也可以从 PowerShell 启动：
 
@@ -285,3 +285,4 @@ python scripts\collect_inquiry_evidence.py --help
 - 名称回退、无身份匹配的专利候选和名称相关临床试验只进入完整候选档案，默认不进入大模型证据包。
 - 证据包始终执行来源、证据类型和网页域名配额，即使总候选数少于 `--pack-items` 也不会让单一搜索源占满。
 - `llm_token_estimates.json` 是本地字符法估计，不是 Codex/ChatGPT 账户的实际扣量。
+
